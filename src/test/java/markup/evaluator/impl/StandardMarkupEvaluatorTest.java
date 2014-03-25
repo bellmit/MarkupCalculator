@@ -10,7 +10,7 @@ import percentage.evaluator.impl.SimplePercentageEvaluator;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Tests compound percentage evaluator
+ * Tests for Standard Markup evaluator
  *
  * @author "Simar Paul Singh"
  */
