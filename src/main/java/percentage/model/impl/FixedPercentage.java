@@ -33,4 +33,5 @@ public class FixedPercentage implements Percentage {
     public double getValue() {
         return this.fixedPercentage;
     }
+
 }
