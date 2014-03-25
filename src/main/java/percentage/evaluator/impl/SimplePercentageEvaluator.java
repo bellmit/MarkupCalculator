@@ -16,7 +16,7 @@ public class SimplePercentageEvaluator implements SimpleEvaluator {
      */
     @Override
     public Percentage evaluate(final Percentage... percentages) {
-        double simplePercentage = 0;
+        double simplePercentage = 0d;
         for (final Percentage nextPercentage : percentages) {
             simplePercentage += nextPercentage.getValue();
         }
@@ -28,6 +28,6 @@ public class SimplePercentageEvaluator implements SimpleEvaluator {
      */
     @Override
     public double simple(final double baseValue, final Percentage... percentages) {
-        return baseValue * ((evaluate(percentages).getValue() / 100) + 1d);
+        return baseValue * ((evaluate(percentages).getValue() / 100d) + 1d);
     }
 }

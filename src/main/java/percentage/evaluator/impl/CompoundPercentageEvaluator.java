@@ -11,7 +11,7 @@ import percentage.model.impl.FixedPercentage;
  */
 public class CompoundPercentageEvaluator implements CompoundEvaluator {
 
-    private static final float BASE_VALUE = 1f;
+    private static final double BASE_VALUE = 1d;
 
     /**
      * {@inheritDoc}
@@ -21,7 +21,7 @@ public class CompoundPercentageEvaluator implements CompoundEvaluator {
         // taking base factor as 1
         final double compoundedValue = compound(BASE_VALUE, percentages);
         // returning aggregated compounded percentage from compounded Value
-        return new FixedPercentage((compoundedValue - BASE_VALUE) * 100);
+        return new FixedPercentage((compoundedValue - BASE_VALUE) * 100d);
     }
 
     /**
@@ -33,7 +33,7 @@ public class CompoundPercentageEvaluator implements CompoundEvaluator {
         double compoundedValue = baseValue;
         // calculating compounded value over base value
         for (final Percentage nextPercentage : percentages) {
-            compoundedValue = (compoundedValue * (1f + nextPercentage.getValue() / 100));
+            compoundedValue = (compoundedValue * (1d + nextPercentage.getValue() / 100d));
         }
         // returning aggregated compounded value
         return compoundedValue;
