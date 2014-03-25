@@ -1,6 +1,10 @@
+Dependencies: Libraries
+==============================
+* jdk-1.7
+* junit-4.11
 
-Pricing problem
-===============
+Solution: Pricing problem
+==============================
 
 NuPack is responsible for taking existing products and repackaging them for sale at electronic stores like Future Shop and Best Buy. Companies will phone up NuPack, explain the process and NuPack needs to quickly give them an estimate of how much it will cost. Different markups to the job:
 
